@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+
+	<input type="text" name="" id="price" placeholder="enter price"><br>
+	<input type="text" name="" id="quantity" placeholder="quantity" onkeyup="cal()"> <br>
+	<input type="text" name="" id="total" readonly >
+
+</body>
+</html>
+
+
+<script type="text/javascript">
+
+  function cal()
+  {
+  	 p=document.getElementById('price').value;
+  	 q=document.getElementById('quantity').value;
+  	 t=p*q;
+  	 document.getElementById('total').value=t;
+  }
+
+</script>
